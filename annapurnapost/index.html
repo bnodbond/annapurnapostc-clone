@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/style.css">
+
+  <title>Annapurna post</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="header-logo text-center">
+
+          <img src="img/logo.png" alt="annapurna" class="img-responsive">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="container navigate">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars text-primary"></i>
+              </button>
+              <a class="navbar-brand 	d-lg-none d-sm-block d-md-block" href="#"><i
+                  class="fas fa-newspaper display-4 text-primary"></i></i></a>
+
+
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link p-0 " aria-current="page" href="#">
+                      <div id="mySidenav" class="sidenav">
+
+                        <img src="img/logo.png" alt="">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">विचार</a>
+                        <a href="#">अन्तर्वार्ता</a>
+                        <a href="#">खेलकुद</a>
+                        <a href="#">अर्थतन्त्र</a>
+                        <a href="#">राजनीति</a>
+                        <a href="#">स्वास्थ्य</a>
+                      </div>
+
+                      <div id="main">
+
+                        <span style="font-size:30px;cursor:pointer " onclick="openNav()"><i
+                            class="fas fa-bars "></i></span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  " aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">ताजा अपडेट</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">अन्‍नपूर्ण हेडलाइन</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#"> सम्पादकीय</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#"> विचार</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">अन्तर्वार्ता</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">खेलकुद</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">अर्थतन्त्र</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">मल्टिमिडिया</a>
+                  </li>
+                  
+
+                </ul>
+                <form class="d-flex ">
+                  <i class="fas fa-search text-center me-4 p-2"></i>
+                  <button class="btn e-paper py-1 px-4"><a href="https://epaper.amn.media/">E-paper</a></button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid ">
+
+    <div class="row">
+      <div class="navigate-list">
+        <ul>
+          <li>
+            <button class="navigate-list-btn bg-primary "><a class="text-light" href="#">संक्षिप्त न्युज</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">कोरोना भाइरस</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">शेरबहादुर देउवा</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">कांग्रेस</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">एमाले</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">कोरोना भाइरस</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">
+                ताजा अपडेट</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">माओवादी केन्द्र</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">एमाले</a></button>
+          </li>
+          <li>
+            <button class="navigate-list-btn"><a href="#">संक्षिप्त न्युज</a></button>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row text-center text-dark py-2 mb-2  headline1img">
+      <h1 class="headline1 py-2"><a href="#">एमसीसी सम्झौता संसदबाट बहुमतले अनुमोदन</a></h1>
+      <img src="img/news img1.jpg" class="img-fluid py-4" alt="annapurna">
+
+      <h1 class="headline1 py-3"><a href="#">भीम रावललाई गगन थापाको चुनौती : बहस अछाममा गर्ने कि काठमाडौंमा?</a></h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <h3>ताजा खबर</h3>
+          <button>सबै हेर्नुहोस्</button>
+        </div>
+      </div>
+      <div class="main-news">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="main-news-latest">
+              <figure class="figure">
+                <img src="img/news img2.jpg" class="figure-img img-fluid rounded me-1 py-3" alt="...">
+                <figcaption class="figure-caption"><a href="#">शिवज्ञानलाई बोध गर्ने पर्व</a></figcaption>
+              </figure>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-lg-6 news-thumnail py-3"><img src="img/news img2.jpg" class="img-thumbnail me-2" alt="">
+                <a href="#">शिवज्ञानलाई बोध गर्ने पर्व</a>
+              </div>
+              <div class="col-lg-6 news-thumnail py-3"><img src="img/news img3.jpg" class="img-thumbnail me-2"
+                  alt="..."><a href="#">सेती
+                  लोकमार्ग सुस्त</a>
+              </div>
+              <div class="col-lg-6 news-thumnail py-3"><img src="img/news img3.jpg" class="img-thumbnail me-2"
+                  alt="..."><a href="#">सेती
+                  लोकमार्ग सुस्त</a>
+
+              </div>
+              <div class="col-lg-6 news-thumnail py-3"><img src="img/news img3.jpg" class="img-thumbnail me-2"
+                  alt="..."><a href="#">सेती
+                  लोकमार्ग सुस्त</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 py-4">
+            <ul class="taja-khabar">
+              <li class="news-thumnail py-3"><a href="#">
+                  भीम रावलले अनुशासन उल्लंघन गरेर हिरो बन्न खोज्नुभयो : ओली</a>
+              </li>
+              <li class="news-thumnail py-3"><a href="#">
+                  थप १५८ जनामा कोरोना पुष्टि</a>
+              </li>
+              <li class="news-thumnail py-3">
+                <a href="#">टुँडिखेलमा यसरी मनाइयो सेना दिवस</a>
+              </li>
+              <li class="news-thumnail py-3"><a href="#"> संसदबाट निकाल्ने ओलीको चेतावनीमा माधवको काउन्टर: सभामुखको
+                  पक्षमा
+                  दृढ भएर उभिन्छौं</a>
+
+              </li>
+              <li class="news-thumnail py-3"><a href="#"> भीम रावलले अनुशासन उल्लंघन गरेर हिरो बन्न खोज्नुभयो : ओली</a>
+              </li>
+              <li class="news-thumnail py-3"><a href="#">कांग्रेसलाई ओलीको कटाक्ष : कहिले छोरी बोक्या छ, कहिले बाउ
+                  बोक्या
+                  छ</a>
+
+              </li>
+              <li class="news-thumnail py-3"><a href="#">
+                  धरानको होटलमा मृत भेटिएकी महिलाको हत्याको कारण अवैध सम्बन्ध</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-lg-3 news-background">
+            <ul class="py-3">
+              <li class="news-thumnail py-3"><img src="img/news img2.jpg" class="img-thumbnail me-2" alt=""> <a
+                  href="#">शिवज्ञानलाई बोध गर्ने पर्व</a>
+              </li>
+              <li class="news-thumnail py-3">
+                <img src="img/news tn1.jpg" class="img-thumbnail me-2" alt=""> <a href="#"> कार्यकर्ता थुमथुम्याउँदै
+                  प्रचण्ड</a>
+              </li>
+              <li class="news-thumnail py-3">
+                <img src="img/news tn2.jpg" class="img-thumbnail me-2" alt=""> <a href="#"> स्थानीय तहको चुनावका लागि
+                  कुन-कुन दल दर्ता भए ?</a>
+              </li>
+              <li class="news-thumnail py-3">
+                <img src="img/news tn3.jpg" class="img-thumbnail me-2" alt=""> <a href="#">विश्वकल्याणका लागि
+                  पशुपतिनाथ</a>
+              </li>
+              <li class="news-thumnail py-3">
+                <img src="img/news tn4.jpg" class="img-thumbnail me-2" alt=""> <a href="#">ओली फोबियाले एमसीसीकै
+                  पक्षमा</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title">
+          <h3>प्रदेश खबर</h3>
+          <button>सबै हेर्नुहोस्</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="pradesh-news py-3">
+          <ul>
+            <li><button type="button" class="btn btn-link px-2"><img src="img/pradesh1.png"
+                  class="img-thumbnail-pradesh" alt="..."></button>
+            </li>
+            <li><button type="button" class="btn btn-link px-2"><img src="img/pr-2.png" class="img-thumbnail-pradesh"
+                  alt="..."></button>
+            </li>
+            <li><button type="button" class="btn btn-link px-2"><img src="img/pr-3.png" class="img-thumbnail-pradesh"
+                  alt="..."></button>
+            </li>
+            <li><button type="button" class="btn btn-link px-2"><img src="img/pr-4.png" class="img-thumbnail-pradesh"
+                  alt="..."></button>
+            </li>
+            <li><button type="button" class="btn btn-link px-2"><img src="img/pr-5..png" class="img-thumbnail-pradesh"
+                  alt="..."></button>
+            </li>
+            <li><button type="button" class="btn btn-link px-2"><img src="img/pr-6.d.png" class="img-thumbnail-pradesh"
+                  alt="..."></button>
+            </li>
+            <li><button type="button" class="btn btn-link px-2"><img src="img/pr-7.a1729474.png"
+                  class="img-thumbnail-pradesh" alt="..."></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <div class="owl-carousel  py-4 owl-theme">
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news img3.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">
+              मेची राजमार्ग जीर्ण</a></figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn2.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#"></a>
+            रुसमाथि नाकाबन्दी गर्ने अमेरिकी तयारी</figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn4.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">खेल्दै गरेका बालकको पानीको खाल्डोमा डुबेर
+              मृत्यु</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn3.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#"> स्थानीय निर्वाचनलाई भयरहित र निष्पक्ष
+              बनाउनुपर्नेमा जोड</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn5.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">रुसमाथि नाकाबन्दी गर्ने अमेरिकी तयारी</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn2.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">साढे तीन महिनापछि आज बस्दै प्रदेश १ को संसद
+              बैठक</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn1.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">मोटरसाइकलले ठक्कर दिंदा साइकल यात्रीको मृत्यु</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn3.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#"> मेची राजमार्ग जीर्ण</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn4.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">खेल्दै गरेका बालकको पानीको खाल्डोमा डुबेर
+              मृत्यु</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn2.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">मेची राजमार्ग जीर्ण</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn1.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">
+              तीन साझेदार हत्याको अनुसन्धान सकियो : ६ जनाको संलग्नता</a></figcaption>
+        </figure>
+      </div>
+      <div class="item">
+        <figure class="figure">
+          <img src="img/news tn5.jpg" class="figure-img img-fluid rounded" alt="...">
+          <figcaption class="figure-caption text-primary"><a href="#">
+              स्थानीय निर्वाचनलाई भयरहित र निष्पक्ष बनाउनुपर्नेमा जोड</a></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="title1">
+          <h3 class="px-2">
+            फुर्सद</h3>
+          <p><a href="" #>सबै हेर्नुहोस्</a>
+          </p>
+
+        </div>
+        <figure class="figure figure-position">
+          <img src="img/news tn2.jpg" class="figure-img img-fluid rounded me-1 py-3" alt="...">
+          <figcaption class="figure-caption caption-position"><a href="#">महाशिवरात्रि माहात्म्य</a></figcaption>
+        </figure>
+        <ul>
+          <li>
+            <div class="col-lg-12 news-thumnail py-3"><img src="img/thumb1.jpg" class="img-thumbnail me-2" alt="">
+              <a href="#">पुरातात्त्विक पनौती
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="col-lg-12 news-thumnail py-3"><img src="img/news tn5.jpg" class="img-thumbnail me-2" alt="">
+              <a href="#">शिवज्ञानलाई बोध गर्ने पर्व</a>
+            </div>
+          </li>
+          <li>
+            <div class="col-lg-12 news-thumnail py-3"><img src="img/news tn3.jpg" class="img-thumbnail me-2" alt="">
+              <a href="#">बप्पी दासँगको त्यो अकल्पनीय भेट
+              </a>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <div class="col-lg-4">
+        <div class="title2">
+          <h3 class="px-2">
+            अंकुर</h3>
+          <p><a href="" #>सबै हेर्नुहोस्</a>
+          </p>
+        </div>
+        <figure class="figure figure-position">
+          <img src="img/news tn3.jpg" class="figure-img img-fluid rounded me-1 py-3" alt="...">
+          <figcaption class="figure-caption caption-position"><a href="#">राजविराजमा पहिलो लिटिल आइकन</a></figcaption>
+        </figure>
+        <ul>
+          <li>
+            <div class="col-lg-12 news-thumnail py-3"><img src="img/thumb1.jpg" class="img-thumbnail me-2" alt="">
+              <a href="#">पुरातात्त्विक पनौती
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="col-lg-12 news-thumnail py-3"><img src="img/news tn5.jpg" class="img-thumbnail me-2" alt="">
+              <a href="#">शिवज्ञानलाई बोध गर्ने पर्व</a>
+            </div>
+          </li>
+          <li>
+            <div class="col-lg-12 news-thumnail py-3"><img src="img/news tn3.jpg" class="img-thumbnail me-2" alt="">
+              <a href="#">बप्पी दासँगको त्यो अकल्पनीय भेट
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="title3">
+          <h3 class="px-2">
+            राशीफल</h3>
+          <p><a href="" #>सबै हेर्नुहोस्</a>
+          </p>
+
+        </div>
+        <div class="scroll   overflow-y: scroll  tabindex=0 py-3">
+
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example"
+            tabindex="0">
+            <ul>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">मेष</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi1.png" class="img-thumbnail me-2" alt=""></div>
+                  </div>
+                  <div class="col-lg-9 px-1">
+                    <p>चु चे चो ला लि लु ले लो अ</p>
+                    <p>पति–पत्नीमा सम्बन्ध सुमधुर बन्ने योग छ। आर्थिक लाभ मिल्ने सम्भावना बलियो छ।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">बृष</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi2.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>इ उ ए ओ वा वी वु वे वो</p>
+                    <p>
+
+                      लामो दूरीको यात्रा हुनसक्ने योग छ। नोकरीमा पदोन्नति हुनसक्छ ।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">मिथुन</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi3.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>का कि कु घ ङ छ के को हा</p>
+                    <p>
+
+                      मुद्दा मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ।
+                      चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">कर्कट</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/raschi4.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>ही हु हे हो डा डि डु डे डो</p>
+                    <p>
+
+                      मुद्दा मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ।
+                      चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">सिंह</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/raschi7.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>मा मि मू मे मो टा टी टु टे</p>
+                    <p>
+
+                      अनावश्यक काममा समय बित्नेछ। धार्मिक कार्यमा सरिक हुने योग छ। मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक
+                      समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ। चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">कन्या</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/raschi6.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>टो प पी पु ष ण ठ पे मो</p>
+
+                    <p>रोजगारीको अवसर प्राप्त हुनेछ। आकस्मिक घटनाले चिन्तित बनिएला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">मिथुन</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi3.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>का कि कु घ ङ छ के को हा</p>
+                    <p>
+
+                      मुद्दा मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ।
+                      चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">मिथुन</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi3.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>का कि कु घ ङ छ के को हा</p>
+                    <p>
+
+                      मुद्दा मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ।
+                      चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">मिथुन</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi3.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>का कि कु घ ङ छ के को हा</p>
+                    <p>
+
+                      मुद्दा मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ।
+                      चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">मिथुन</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi3.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>का कि कु घ ङ छ के को हा</p>
+                    <p>
+
+                      मुद्दा मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ।
+                      चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+              <li>
+                <h4 id="list-item-1 text-center" class="text-primary">मिथुन</h4>
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class=" news-thumnail py-3"><img src="img/rashi3.png" class="img-thumbnail me-2" alt="">
+                    </div>
+                  </div>
+                  <div class="col-lg-9">
+                    <p>का कि कु घ ङ छ के को हा</p>
+                    <p>
+
+                      मुद्दा मामिलाबाट छुटकारा मिल्नेछ। पारिवारिक समस्या सुल्झनेछ। राजनीतिक पक्ष मध्यम रहने योग छ।
+                      चौपायाबाट भने राम्रै मुनाफा मिल्ला।</p>
+                  </div>
+              </li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-lg-12 text-center">
+          <img src="img/amn.media.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="media">
+          <a href="#"><img src="img/m1.png" alt=""></a>
+          <a href="#"><img src="img/m2.png" alt=""></a>
+          <a href="#"><img src="img/m3.png" alt=""></a>
+          <a href="#"> <img src="img/m4.png" alt=""></a>
+          <a href="#"> <img src="img/m5.png" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-list">
+        <ul>
+          <li class="px-3">
+            <a href="#">विचार</a>
+          </li>
+          <li class="px-3">
+            <a href="#">अन्तर्वार्ता</a>
+          </li>
+          <li class="px-3">
+            <a href="#">खेलकुद</a>
+          </li>
+          <li class="px-3">
+            <a href="#">अर्थतन्त्र</a>
+          </li>
+          <li class="px-3">
+            <a href="#">स्वास्थ्य</a>
+          </li>
+          <li class="px-3">
+            <a href="#">राजनीति</a>
+          </li>
+          <li class="px-3">
+            <a href="#">मनोरञ्जन</a>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="row footer-border">
+        <div class="col-lg-4 py-4">
+          <h4>सम्पर्क ठेगाना</h4>
+          <p>कर्पोरेट टावर, तीनकुने, काठमाडौं</P>
+          <P> पोष्ट बक्स नं २४९९९</p>
+          <p class="text-primary1">
+            4112305/4112327/4112499/9801147704
+            annapurnapost.com@gmail.com
+            marketing@amn.com.np
+          </p>
+        </div>
+        <div class="col-lg-4 py-4 ">
+          <h4>उपयोगी लिंकहरु</h4>
+          <div class="row">
+            <div class="col-lg-6">
+              <p class="text-primary1">हाम्रो बारे<a href="#"></a></p>
+              <p class="text-primary1"><a href="#">विज्ञापनको लागि</a> </p>
+
+            </div>
+            <div class="col-lg-6">
+              <p class="text-primary1"><a href="#">ग्राहक बन्नुहोस्</a> </p>
+              <p class="text-primary1"><a href="#">Job Vacancy</a> </p>
+            </div>
+            <div class="links">
+              <a href=""> <i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""> <i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="playstore">
+              <a href="#"><img src="img/playstore.png" alt=""></a>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 py-4 text-center">
+          <p>
+            प्रकाशक : क्याप्टेन रामेश्वर थापा<br>
+            समाचार प्रमुख : शम्भु कट्टेल<br>
+            दर्ता न. : १३०९/०७५-०७६<br>
+           <a href="#">Privacy Policy</a> <br>
+           <a href="#" >Terms Of Service</a>
+          </p>
+        </div>
+      </div>
+      <div class="copyright text-center">
+        <p>© Copyright 2021 Binod siwakoti</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/sidebar.js"></script>
+
+
+
+</body>
+
+</html>

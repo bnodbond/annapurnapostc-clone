@@ -1,0 +1,495 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* ul {
+  margin: 0px 0px;
+}
+
+* ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background: #FBFBFB;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.header {
+  background-color: #F9F9F9;
+}
+
+.header-logo img {
+  height: 120px;
+  width: auto;
+}
+
+.navigate {
+  background: #FFFFFF;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 700;
+  color: #000;
+  padding-left: 1.3rem;
+  font-size: 1.1rem;
+}
+
+.navbar-light .navbar-nav .nav-link i {
+  font-size: 1.8rem;
+  color: #0171BB;
+}
+
+.navbar-light .navbar-nav .nav-link ul li :hover {
+  color: #0684C7;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0684C7;
+}
+
+.navbar-nav .dropdown-menu {
+  background: #F9F9F9;
+  width: 1300px;
+  margin-left: 100px;
+}
+
+.navbar-nav .dropdown-menu ul li {
+  text-decoration: none;
+  font-weight: 650;
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+.navbar-nav .dropdown-menu a {
+  color: #000;
+}
+
+.fa-search:before {
+  font-size: 1.3rem;
+}
+
+.e-paper {
+  border: 1px solid #0684C7;
+  padding: 0px 0px;
+  border-radius: 25px;
+  background: #CBE3F0;
+  color: #0684C7;
+}
+
+.e-paper a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 580px) {
+  .navigate-list {
+    display: none;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 16px 8px 8px 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav img {
+  height: 8vh;
+  padding-left: 30px;
+}
+
+.sidenav a:hover {
+  color: #0684C7;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+}
+
+#main span i {
+  color: #0171BB;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.navigate-list-bg {
+  background: #0684C7;
+}
+
+.navigate-list {
+  background-color: #F6F6F6;
+}
+
+.navigate-list-btn {
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  background: #F8FCFF;
+}
+
+.navigate-list ul {
+  margin: .3rem .3rem;
+}
+
+.navigate-list ul li {
+  padding-left: 1.2rem;
+  list-style-type: none;
+  display: inline;
+  text-decoration: none;
+}
+
+.navigate-list ul li a {
+  text-decoration: none;
+  color: #0684C7;
+  font-weight: 500;
+}
+
+.headline1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.headline1img {
+  max-width: 100%;
+  margin: 0px 105px;
+}
+
+.headline1img img {
+  vertical-align: middle;
+  border-bottom: .1em solid gray;
+}
+
+.headline1img a {
+  text-decoration: none;
+  color: #000;
+}
+
+.headline1img a:hover {
+  color: #0684C7;
+}
+
+@media screen and (max-width: 580px) {
+  .headline1 {
+    font-size: 2rem;
+  }
+  .headline1img {
+    margin: 0px;
+  }
+  .headline1img img {
+    width: 100%;
+  }
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.title h3 {
+  font-weight: 900;
+}
+
+.title button {
+  border: none;
+  background: #DFEEF6;
+  color: #0684C7;
+}
+
+.main-news-latest {
+  position: relative;
+}
+
+.main-news-latest .figure-caption {
+  position: absolute;
+  top: 325px;
+  left: 30px;
+  color: #FFF;
+  z-index: 6;
+}
+
+.main-news-latest .figure-caption a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main-news-latest:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, transparent), color-stop(60%, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.9));
+  z-index: 5;
+}
+
+.img-thumbnail {
+  width: 100px;
+  height: 60px;
+}
+
+.news-thumnail {
+  border-bottom: .05em solid gray;
+  padding: 5px;
+}
+
+.news-thumnail a {
+  color: #2c2a2a;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.news-thumnail a:hover {
+  color: #0684C7;
+}
+
+.news-background {
+  background: #f3f1f1;
+  margin-top: 1rem;
+}
+
+.pradesh-news ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pradesh-news ul li {
+  display: inline;
+}
+
+.pradesh-news img {
+  padding: 15px 10px 30px 10px;
+}
+
+.pradesh-news img:hover {
+  background: #e3ecf0;
+  z-index: 10;
+}
+
+.img-thumbnail-pradesh {
+  width: 170px;
+  height: 150px;
+  background: #ffffff;
+  border: 0.01em solid #c4c2c2;
+  border-radius: 20px;
+}
+
+.title1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(106, 27, 154, 0.38)), color-stop(50%, rgba(223, 174, 255, 0.5)), to(rgba(223, 174, 255, 0)));
+  background: linear-gradient(90deg, rgba(106, 27, 154, 0.38) 0, rgba(223, 174, 255, 0.5) 50%, rgba(223, 174, 255, 0));
+}
+
+.title1 p {
+  padding-top: 10px;
+}
+
+.title2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(154, 27, 54, 0.38)), color-stop(50%, rgba(211, 91, 127, 0.5)), to(rgba(248, 197, 205, 0)));
+  background: linear-gradient(90deg, rgba(154, 27, 54, 0.38) 0, rgba(211, 91, 127, 0.5) 50%, rgba(248, 197, 205, 0));
+}
+
+.title2 p {
+  padding-top: 10px;
+}
+
+.title3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(20, 52, 156, 0.38)), color-stop(50%, rgba(112, 120, 235, 0.5)), to(rgba(214, 211, 247, 0)));
+  background: linear-gradient(90deg, rgba(20, 52, 156, 0.38) 0, rgba(112, 120, 235, 0.5) 50%, rgba(214, 211, 247, 0));
+}
+
+.title3 p {
+  padding-top: 10px;
+}
+
+.figure-position {
+  position: relative;
+}
+
+.figure-position .caption-position {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+
+.figure-position .caption-position a {
+  color: #1f7ab8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.scroll {
+  position: relative;
+  height: 550px;
+  width: auto;
+  overflow-y: scroll;
+}
+
+.footer {
+  background: #eaebec;
+}
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.media img {
+  width: 190px;
+  height: 100px;
+}
+
+@media screen and (max-width: 580px) {
+  .media {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .media {
+    display: none;
+  }
+}
+
+.footer-list {
+  border-top: 1px solid #1A86C8;
+  border-bottom: 1px solid #1A86C8;
+}
+
+.footer-list ul {
+  padding: 20px 5px;
+}
+
+.footer-list ul li {
+  display: inline;
+  border-right: 2px solid #1A86C8;
+}
+
+.footer-list ul li a {
+  color: #1A86C8;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.text-primary1 {
+  color: #1A86C8;
+}
+
+.text-primary1 a {
+  color: #1A86C8;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.links i {
+  font-size: 2.3rem;
+  padding-right: 10px;
+  color: #1A86C8;
+}
+
+.playstore {
+  padding-top: 10px;
+}
+
+.playstore img {
+  height: 50px;
+  width: 200px;
+}
+
+.footer-border {
+  border-bottom: 1px solid #1A86C8;
+}
+
+.copyright p {
+  margin: 0px 0px;
+  padding: 5px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */
